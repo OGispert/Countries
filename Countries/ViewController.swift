@@ -91,12 +91,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         for country in countriesWithStates {
             if tableView.cellForRow(at: indexPath)?.textLabel?.text == country.key {
                 if country.value.count == 0 {
-                    let alert = UIAlertController(title: "Did you know?", message: "The country you selected doesn't have any states?", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Did you know?", message: "\(country.key) doesn't have any states. Maybe the country configuration is different.", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 } else {
                     let detailsVC = DetailsViewController.getInstance()
                     detailsVC.listOfStates = country.value
+                    detailsVC.selectedState = country.key
                     self.navigationController?.pushViewController(detailsVC, animated: true)
                 }
             }

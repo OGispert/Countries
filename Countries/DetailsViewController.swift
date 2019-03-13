@@ -13,6 +13,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     
     var listOfStates: [String]?
+    var selectedState: String?
     
     static func getInstance() -> DetailsViewController {
         let storybboard = UIStoryboard(name: "Main", bundle: nil)
@@ -25,7 +26,19 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.delegate = self
         tableView.dataSource =  self
         
-        self.title = "States"
+        self.title = selectedState
+    }
+    
+    @IBAction func shareButtonTapped(_ sender: UIBarButtonItem) {
+        if let country = selectedState, let states = listOfStates {
+            let last = states.last
+            let allButLast = states.dropLast()
+            let allButLastSeparatedByComa = allButLast.joined(separator: ", ")
+            let newListOfStates = allButLastSeparatedByComa + " and " + last!
+            
+            let shareVC = UIActivityViewController(activityItems: ["\(country)'s States are: \(newListOfStates)."], applicationActivities: nil)
+            present(shareVC, animated: true, completion: nil)
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

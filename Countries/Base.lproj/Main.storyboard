@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gSO-QY-RpZ">
-                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <rect key="frame" x="16" y="72" width="343" height="575"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="Go6-NH-t6x">
@@ -83,6 +83,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yu5-70-MLl"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ul5-NW-Ufe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="jgA-8H-2d5">
+                            <connections>
+                                <action selector="shareButtonTapped:" destination="Mfz-cA-eed" id="DcO-Us-WfF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="gSO-QY-RpZ" id="nNY-5B-kEN"/>
                     </connections>
