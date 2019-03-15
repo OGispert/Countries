@@ -14,6 +14,7 @@
 		1708193421F9582E001B596D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1708193221F9582E001B596D /* LaunchScreen.storyboard */; };
 		17767C8621FA75E8000607A6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17767C8521FA75E8000607A6 /* DetailsViewController.swift */; };
 		17B3DF0221F99B9200234270 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3DF0121F99B9200234270 /* GetData.swift */; };
+		17FDF315223B2C4B00F4E7A4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FDF314223B2C4B00F4E7A4 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1708193521F9582E001B596D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17767C8521FA75E8000607A6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		17B3DF0121F99B9200234270 /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
+		17FDF314223B2C4B00F4E7A4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				1708192921F9582D001B596D /* AppDelegate.swift */,
+				17FDF314223B2C4B00F4E7A4 /* MainViewController.swift */,
 				1708192B21F9582D001B596D /* ViewController.swift */,
 				17767C8521FA75E8000607A6 /* DetailsViewController.swift */,
 				17B3DF0121F99B9200234270 /* GetData.swift */,
@@ -145,6 +148,7 @@
 				1708192A21F9582D001B596D /* AppDelegate.swift in Sources */,
 				17B3DF0221F99B9200234270 /* GetData.swift in Sources */,
 				17767C8621FA75E8000607A6 /* DetailsViewController.swift in Sources */,
+				17FDF315223B2C4B00F4E7A4 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

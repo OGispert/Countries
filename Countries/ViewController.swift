@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         getListOfCountries()
         
-        self.title = "Countries"
+        self.title = "World Countries"
     }
     
     func getListOfCountries() {

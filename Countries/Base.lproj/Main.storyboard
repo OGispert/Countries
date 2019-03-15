@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YjJ-Kx-eT6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ugg-GC-VEK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Countries" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Countries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,6 +98,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xBn-5e-OIy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1847.2" y="131.78410794602701"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BlV-8l-gXI">
+            <objects>
+                <viewController id="Ugg-GC-VEK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Lg-a3-4M1" customClass="MainViewConroller">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snU-xL-e2H">
+                                <rect key="frame" x="118" y="98" width="139" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBF-2u-0b3">
+                                <rect key="frame" x="105.5" y="317" width="164" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Open list of countries"/>
+                                <connections>
+                                    <segue destination="YjJ-Kx-eT6" kind="show" id="gVX-qa-KTZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="snU-xL-e2H" firstAttribute="centerX" secondItem="7Lg-a3-4M1" secondAttribute="centerX" id="21H-Cy-pZV"/>
+                            <constraint firstItem="sBF-2u-0b3" firstAttribute="centerY" secondItem="7Lg-a3-4M1" secondAttribute="centerY" id="7GY-1c-Z6r"/>
+                            <constraint firstItem="sBF-2u-0b3" firstAttribute="centerX" secondItem="7Lg-a3-4M1" secondAttribute="centerX" id="EtA-c0-Ajd"/>
+                            <constraint firstItem="snU-xL-e2H" firstAttribute="top" secondItem="FB5-3v-jBM" secondAttribute="top" constant="78" id="w82-fN-aFk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FB5-3v-jBM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AY5-zM-WCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="-614"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NaR-T3-ik9">
